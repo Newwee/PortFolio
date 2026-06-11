@@ -1,0 +1,26 @@
+services:
+  - type: web
+    name: newja-portfolio
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
+      - key: DATABASE_URL
+        fromDatabase:
+          name: newja-portfolio-db
+          property: connectionString
+      - key: ADMIN_EMAIL
+        sync: false
+      - key: ADMIN_PASSWORD
+        sync: false
+      - key: ADMIN_NAME
+        value: New JA Admin
+
+databases:
+  - name: newja-portfolio-db
+    databaseName: newja_portfolio
+    user: newja_portfolio

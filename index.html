@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>New JA | KMITL Developer Portfolio</title>
+  <meta name="description" content="Developer portfolio and life story of New JA, Pataradanai Pongsao.">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <div class="noise" aria-hidden="true"></div>
+  <div class="sparkles" aria-hidden="true">
+    <span></span><span></span><span></span><span></span><span></span><span></span>
+  </div>
+
+  <header class="topbar">
+    <a class="brand" href="#home" aria-label="New JA home">
+      <img src="assets/seal.png" alt="">
+      <span>New JA</span>
+    </a>
+    <nav class="nav" aria-label="Main navigation">
+      <a href="#profile">Profile</a>
+      <a href="#story">Life Story</a>
+      <a href="#skills">Skills</a>
+      <a href="#projects">Works</a>
+      <a href="#certificates">Certificates</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <div class="auth-actions">
+      <span class="user-badge" id="userBadge" hidden></span>
+      <button class="icon-btn" id="dashboardBtn" type="button" hidden>Admin</button>
+      <button class="ghost-btn" id="loginBtn" type="button">Login</button>
+      <button class="solid-btn" id="registerBtn" type="button">Register</button>
+      <button class="ghost-btn" id="logoutBtn" type="button" hidden>Logout</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="hero-copy reveal">
+        <p class="kicker">KMITL Dreamer / Developer Portfolio</p>
+        <h1>New JA</h1>
+        <div class="hero-name">
+          <span></span>
+          <p>
+            <strong>Pataradanai Pongsao</strong>
+            <em>AKA New JA / Born 06.23.09</em>
+          </p>
+        </div>
+        <p class="hero-text">
+          High school Grade 12 developer who grew up loving play, then started building. I use AI as a creative partner, code as a tool, and KMITL as the dream destination for a future in technology.
+        </p>
+        <div class="hero-actions">
+          <a class="solid-btn big" href="#projects">See My Works</a>
+          <a class="ghost-btn big" href="#story">Read Life Story</a>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="seal-orbit"></div>
+        <div class="seal-disc">
+          <img src="assets/seal.png" alt="KMITL seal">
+        </div>
+        <div class="floating-card now-card">
+          <small>KMITL now</small>
+          <strong>New message</strong>
+          <p>Dream university. Tech future. Smooth transition.</p>
+        </div>
+        <div class="phone-card">
+          <img src="assets/kmitl-logo.jpg" alt="KMITL logo">
+          <h2>Developer Mode</h2>
+          <p>Python, Roblox Lua, web design, content creation, and MMO RPG experiments.</p>
+        </div>
+        <div class="face-card">
+          <img src="assets/myface.jpg" alt="Portrait of New JA">
+          <strong>New JA</strong>
+          <span>Developer / Creator</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section profile-section" id="profile">
+      <div class="profile-layout reveal">
+        <div class="profile-photo">
+          <img src="assets/myface.jpg" alt="New JA portrait">
+        </div>
+        <div>
+          <p class="kicker">Creator Profile</p>
+          <h2>Pataradanai Pongsao</h2>
+          <p>New JA is a Grade 12 Science-Math student focused on developer work, Roblox game systems, AI-assisted building, content creation, and future technology studies at KMITL.</p>
+          <div class="profile-tags">
+            <span class="pill">AKA New JA</span>
+            <span class="pill">Born 06.23.09</span>
+            <span class="pill">Developer</span>
+            <span class="pill">KMITL Dreamer</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section story-section" id="story">
+      <div class="section-head reveal">
+        <p class="kicker">Life Story</p>
+        <h2>From playing as a kid to building as a creator.</h2>
+        <p>New JA's story is shaped into a timeline, from early school life to the long-term dream of studying at KMITL.</p>
+      </div>
+      <div class="timeline" id="storyList"></div>
+    </section>
+
+    <section class="section" id="skills">
+      <div class="section-head reveal">
+        <p class="kicker">Skill Stack</p>
+        <h2>I can do anything with AI.</h2>
+        <p>The scores below are New's current self-rated levels, presented as a sharp developer-style dashboard.</p>
+      </div>
+      <div class="ai-strip reveal" id="aiToolList"></div>
+      <div class="skill-grid" id="skillList"></div>
+    </section>
+
+    <section class="section" id="projects">
+      <div class="section-head reveal">
+        <p class="kicker">Works</p>
+        <h2>What I am building now.</h2>
+        <p>Members can sign in and like projects. Accounts, sessions, and likes are stored securely on the server.</p>
+      </div>
+      <div class="project-grid" id="projectList"></div>
+    </section>
+
+    <section class="section" id="certificates">
+      <div class="section-head reveal">
+        <p class="kicker">Certificates</p>
+        <h2>Activities and proof of growth.</h2>
+        <p>Certificate images from the Cer folder are presented as a gallery with smooth hover transitions.</p>
+      </div>
+      <div class="certificate-grid" id="certificateList"></div>
+    </section>
+
+    <section class="section contact-section" id="contact">
+      <div class="section-head reveal">
+        <p class="kicker">Contact</p>
+        <h2>Let's connect.</h2>
+      </div>
+      <div class="contact-grid">
+        <a href="mailto:pongpataradanai@gmail.com"><span>Gmail</span><strong>pongpataradanai@gmail.com</strong></a>
+        <a href="https://line.me/R/ti/p/~new_vd" target="_blank" rel="noreferrer"><span>Line</span><strong>new_vd</strong></a>
+        <a href="https://www.facebook.com/pataradanai.pongsao" target="_blank" rel="noreferrer"><span>Facebook</span><strong>pataradanai.pongsao</strong></a>
+        <a href="https://www.instagram.com/new.linknewja/" target="_blank" rel="noreferrer"><span>Instagram</span><strong>@new.linknewja</strong></a>
+        <a href="https://github.com/Newwee" target="_blank" rel="noreferrer"><span>GitHub</span><strong>github.com/Newwee</strong></a>
+      </div>
+    </section>
+  </main>
+
+  <dialog class="modal" id="authModal">
+    <form method="dialog" class="modal-panel" id="authForm">
+      <button class="close-btn" id="closeAuthBtn" type="button" aria-label="Close">x</button>
+      <p class="kicker" id="authKicker">Login</p>
+      <h2 id="authTitle">Welcome back</h2>
+      <p class="modal-copy" id="authCopy">Login to like projects and access your member account.</p>
+
+      <label id="usernameField">
+        Username
+        <input id="usernameInput" required minlength="2" autocomplete="username">
+      </label>
+      <label>
+        Email
+        <input id="emailInput" type="email" required placeholder="name@example.com" autocomplete="email">
+      </label>
+      <label>
+        Password
+        <input id="passwordInput" type="password" required minlength="10" autocomplete="current-password">
+      </label>
+      <p class="password-rule" id="passwordRule" hidden>Use 10+ characters with uppercase, lowercase, a number, and a symbol.</p>
+      <label id="ageField">
+        Age
+        <input id="ageInput" type="number" min="1" max="120" value="17">
+      </label>
+
+      <button class="solid-btn wide" type="submit" id="authSubmit">Login</button>
+      <p class="form-status" id="formStatus"></p>
+    </form>
+  </dialog>
+
+  <dialog class="modal dashboard-modal" id="dashboardModal">
+    <section class="modal-panel dashboard-panel">
+      <button class="close-btn" id="closeDashboardBtn" aria-label="Close">x</button>
+      <p class="kicker">Admin Back Office</p>
+      <h2>Portfolio Control Room</h2>
+      <div class="admin-stats" id="adminStats"></div>
+      <div class="dashboard-grid">
+        <article class="dashboard-users">
+          <h3>User Accounts</h3>
+          <div id="userList" class="admin-list"></div>
+        </article>
+        <article>
+          <h3>Project Likes</h3>
+          <div id="likeList" class="admin-list"></div>
+        </article>
+        <article class="dashboard-logs">
+          <h3>System Logs</h3>
+          <div id="logList" class="admin-list log-list"></div>
+        </article>
+      </div>
+    </section>
+  </dialog>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+  <script src="app.js"></script>
+</body>
+</html>
